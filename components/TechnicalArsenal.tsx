@@ -48,7 +48,10 @@ export default function TechnicalArsenal() {
     >
       {/* Container added to keep grid centered and bounded */}
       <div className="container mx-auto px-4 max-w-5xl">
-        <h2 className="text-3xl font-bold text-center text-white mb-4">
+        <h2
+          className="text-3xl font-bold text-center text-white mb-4 animate-fade-in"
+          style={{ animationTimeline: "view()" }}
+        >
           Technical Arsenal
         </h2>
         <p className="text-center text-zinc-400 mb-12 font-mono text-sm">

@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 import {
   FiFileText,
   FiMapPin,
@@ -16,6 +18,8 @@ import Certifications from "@/components/Certifications";
 import Image from "next/image";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       {/* Navbar */}
@@ -78,8 +82,12 @@ export default function Home() {
           </a>
 
           {/* Mobile Menu Button (Optional, for later implementation) */}
-          <div className="md:hidden">
-            <button className="text-white focus:outline-none">
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white focus:outline-none"
+              aria-label="Toggle menu"
+            >
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -87,16 +95,82 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                )}
               </svg>
             </button>
           </div>
         </div>
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 bg-zinc-900 rounded-lg p-4">
+            <div className="flex flex-col items-center space-y-4 font-mono text-zinc-300">
+              <Link
+                href="#about"
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-purple-400"
+              >
+                about
+              </Link>
+              <Link
+                href="#experience"
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-purple-400"
+              >
+                experience
+              </Link>
+              <Link
+                href="#projects"
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-purple-400"
+              >
+                projects
+              </Link>
+              <Link
+                href="#certifications"
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-purple-400"
+              >
+                certifications
+              </Link>
+              <Link
+                href="#skills"
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-purple-400"
+              >
+                skills
+              </Link>
+              <Link
+                href="#contact"
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-purple-400"
+              >
+                contact
+              </Link>
+              <a
+                href="/CV_Dafa_Raihan_Ari_Wibowo.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-purple-400"
+              >
+                resume
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       <main

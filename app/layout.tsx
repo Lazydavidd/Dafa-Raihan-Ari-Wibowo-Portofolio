@@ -23,6 +23,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      // This attribute helps Next.js manage scroll behavior during navigation.
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col bg-zinc-950">{children}</body>
     </html>

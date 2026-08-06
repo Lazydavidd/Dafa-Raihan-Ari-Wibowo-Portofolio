@@ -28,7 +28,10 @@ export default function Certifications() {
       className="py-16 border-t border-zinc-800 scroll-mt-28"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-white mb-12">
+        <h2
+          className="text-3xl font-bold text-center text-white mb-12 animate-fade-in"
+          style={{ animationTimeline: "view()" }}
+        >
           Certifications & Courses
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
