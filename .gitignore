@@ -40,6 +40,3 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# ignore public directory and GetInTouch component
-public/
-components/GetInTouch.tsx
