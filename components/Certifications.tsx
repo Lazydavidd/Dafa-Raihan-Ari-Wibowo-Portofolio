@@ -8,7 +8,7 @@ const CertificationCard = ({
 }) => (
   <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 h-full">
     <div className="flex items-start gap-4">
-      <FiAward className="text-purple-400 text-2xl mt-1 flex" />
+      <FiAward className="text-blue-500 text-2xl mt-1 flex" />
       <div>
         <h3 className="text-white font-bold">{certification.title}</h3>
         <p className="text-zinc-400 text-sm mt-1">{certification.issuer}</p>

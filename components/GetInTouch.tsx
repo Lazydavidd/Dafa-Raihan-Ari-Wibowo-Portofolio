@@ -15,14 +15,14 @@ export default function GetInTouch() {
           <div className="space-y-4">
             <a
               href="mailto:Dafaraihanariwibowo@gmail.com"
-              className="flex items-center text-gray-300 hover:text-purple-400"
+              className="flex items-center text-gray-300 hover:text-blue-500"
             >
               <FiMail className="mr-3 text-xl" />
               <span>Dafaraihanariwibowo@gmail.com</span>
             </a>
             <a
               href="tel:+628881532960"
-              className="flex items-center text-gray-300 hover:text-purple-400"
+              className="flex items-center text-gray-300 hover:text-blue-500"
             >
               <FiPhone className="mr-3 text-xl" />
               <span>+62 888 1532 960</span>
@@ -31,7 +31,7 @@ export default function GetInTouch() {
               href="https://www.linkedin.com/in/dafaraihan/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-gray-300 hover:text-purple-400"
+              className="flex items-center text-gray-300 hover:text-blue-500"
             >
               <FiLinkedin className="mr-3 text-xl" />
               <span>dafaraihan</span>
@@ -59,7 +59,7 @@ export default function GetInTouch() {
                 id="name"
                 placeholder="Your Name"
                 required
-                className="w-full bg-gray-900 border border-gray-700 rounded-md p-3 text-white focus:ring-purple-500 focus:border-purple-500"
+                className="w-full bg-gray-900 border border-gray-700 rounded-md p-3 text-white focus:ring-blue-500 focus:border-blue-500"
               />
             </div>
             <div>
@@ -72,7 +72,7 @@ export default function GetInTouch() {
                 id="email"
                 placeholder="Your Email"
                 required
-                className="w-full bg-gray-900 border border-gray-700 rounded-md p-3 text-white focus:ring-purple-500 focus:border-purple-500"
+                className="w-full bg-gray-900 border border-gray-700 rounded-md p-3 text-white focus:ring-blue-500 focus:border-blue-500"
               />
             </div>
             <div>
@@ -85,7 +85,7 @@ export default function GetInTouch() {
                 rows={4}
                 placeholder="Your Message"
                 required
-                className="w-full bg-gray-900 border border-gray-700 rounded-md p-3 text-white focus:ring-purple-500 focus:border-purple-500"
+                className="w-full bg-gray-900 border border-gray-700 rounded-md p-3 text-white focus:ring-blue-500 focus:border-blue-500"
               ></textarea>
             </div>
             <div>

@@ -30,7 +30,7 @@ const FilterButton = ({
     onClick={onClick}
     className={`flex items-center gap-2 px-3 py-1.5 border rounded-md text-sm font-mono transition-colors ${
       isActive
-        ? "bg-zinc-800 border-purple-500 text-purple-400"
+        ? "bg-zinc-800 border-blue-500 text-blue-400"
         : "border-zinc-700 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200"
     }`}
   >
@@ -61,7 +61,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
           {project.date}
         </div>
       </div>
-      <p className="text-purple-400 font-mono text-xs uppercase mb-4">
+      <p className="text-blue-400 font-mono text-xs uppercase mb-4">
         {project.role}
       </p>
       <ul className="grow mb-6 space-y-1.5">
@@ -89,7 +89,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
           href={project.githubUrl || "#"}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-purple-400 transition-colors text-sm"
+          className="inline-flex items-center gap-2 text-zinc-400 hover:text-blue-400 transition-colors text-sm"
         >
           <FiGithub />
           <span>source</span>

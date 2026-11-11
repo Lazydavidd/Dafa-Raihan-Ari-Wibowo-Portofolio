@@ -1,5 +1,5 @@
 const skills = {
-  Languages: ["JavaScript (ES6+)", "TypeScript", "Python", "SQL"],
+  Languages: ["JavaScript (ES6+)", "TypeScript", "SQL"],
   "Frameworks & Libraries": [
     "React.js",
     "Node.js",
@@ -28,11 +28,11 @@ const skills = {
 
 const SkillCard = ({ title, skills }: { title: string; skills: string[] }) => (
   <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
-    <h3 className="text-purple-400 font-mono text-lg mb-4">{title}</h3>
+    <h3 className="text-blue-500 font-mono text-lg mb-4">{title}</h3>
     <ul className="space-y-2">
       {skills.map((skill) => (
         <li key={skill} className="text-zinc-300 font-mono text-sm">
-          <span className="text-purple-400 mr-2">◆</span>
+          <span className="text-blue-500 mr-2">◆</span>
           {skill}
         </li>
       ))}

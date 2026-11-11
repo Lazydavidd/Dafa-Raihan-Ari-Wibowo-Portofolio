@@ -40,14 +40,14 @@ const TimelineItem = ({
     )}
 
     {/* Icon Badge - Centered over the line (width 32px, left 0 to 32px) */}
-    <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 rounded-full bg-zinc-900 border-2 border-purple-400 text-purple-400 z-10">
+    <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 rounded-full bg-zinc-900 border-2 border-blue-500 text-blue-500 z-10">
       {item.icon}
     </div>
 
     {/* Content - Placed at pl-12 (48px) with plenty of room */}
     <div className="flex flex-col sm:flex-row justify-between items-start mb-1">
       <h3 className="text-lg font-bold text-white">{item.title}</h3>
-      <div className="flex items-center gap-2 text-purple-400 font-mono text-sm mt-1 sm:mt-0">
+      <div className="flex items-center gap-2 text-blue-500 font-mono text-sm mt-1 sm:mt-0">
         <FiCalendar />
         <span>{item.date}</span>
       </div>
@@ -58,7 +58,7 @@ const TimelineItem = ({
     <ul className="space-y-2 text-zinc-400 font-mono text-sm">
       {item.points.map((point, index) => (
         <li key={index} className="flex items-start gap-2">
-          <span className="text-purple-400 mr-1">◆</span>
+          <span className="text-blue-500 mr-1">◆</span>
           <span>{point}</span>
         </li>
       ))}
