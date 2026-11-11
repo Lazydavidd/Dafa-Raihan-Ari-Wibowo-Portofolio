@@ -34,37 +34,37 @@ export default function Home() {
           <div className="hidden md:flex space-x-6 font-mono text-zinc-400">
             <Link
               href="#about"
-              className="hover:text-purple-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md px-2 py-1"
+              className="hover:text-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md px-2 py-1"
             >
               about
             </Link>
             <Link
               href="#experience"
-              className="hover:text-purple-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md px-2 py-1"
+              className="hover:text-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md px-2 py-1"
             >
               experience
             </Link>
             <Link
               href="#projects"
-              className="hover:text-purple-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md px-2 py-1"
+              className="hover:text-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md px-2 py-1"
             >
               projects
             </Link>
             <Link
               href="#certifications"
-              className="hover:text-purple-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md px-2 py-1"
+              className="hover:text-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md px-2 py-1"
             >
               certifications
             </Link>
             <Link
               href="#skills"
-              className="hover:text-purple-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md px-2 py-1"
+              className="hover:text-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md px-2 py-1"
             >
               skills
             </Link>
             <Link
               href="#contact"
-              className="hover:text-purple-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md px-2 py-1"
+              className="hover:text-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md px-2 py-1"
             >
               contact
             </Link>
@@ -75,9 +75,9 @@ export default function Home() {
             href="/CV_Dafa_Raihan_Ari_Wibowo.pdf" // Place your resume in the `public` folder
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-2 border border-zinc-700 bg-zinc-900 text-zinc-400 px-4 py-2 rounded-md text-sm hover:bg-zinc-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+            className="hidden md:flex items-center gap-2 border border-zinc-700 bg-zinc-900 text-zinc-400 px-4 py-2 rounded-md text-sm hover:bg-zinc-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
           >
-            <FiFileText className="text-purple-400" />
+            <FiFileText className="text-blue-500" />
             resume
           </a>
 
@@ -121,42 +121,42 @@ export default function Home() {
               <Link
                 href="#about"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-purple-400"
+                className="hover:text-blue-500"
               >
                 about
               </Link>
               <Link
                 href="#experience"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-purple-400"
+                className="hover:text-blue-500"
               >
                 experience
               </Link>
               <Link
                 href="#projects"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-purple-400"
+                className="hover:text-blue-500"
               >
                 projects
               </Link>
               <Link
                 href="#certifications"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-purple-400"
+                className="hover:text-blue-500"
               >
                 certifications
               </Link>
               <Link
                 href="#skills"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-purple-400"
+                className="hover:text-blue-500"
               >
                 skills
               </Link>
               <Link
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-purple-400"
+                className="hover:text-blue-500"
               >
                 contact
               </Link>
@@ -164,7 +164,7 @@ export default function Home() {
                 href="/CV_Dafa_Raihan_Ari_Wibowo.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-purple-400"
+                className="hover:text-blue-500"
               >
                 resume
               </a>
@@ -180,14 +180,14 @@ export default function Home() {
         <div className="max-w-4xl w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             {/* Left Column: Image */}
-            <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto md:mx-0">
+            <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto md:mx-0 rounded-full border-4 border-zinc-800 overflow-hidden">
               <Image
                 src="/IMG_9962.JPG"
                 alt="Dafa Raihan Ari Wibowo"
                 fill
                 sizes="(max-width: 768px) 160px, 192px"
                 priority
-                className="rounded-full object-cover object-top border-4 border-zinc-800"
+                className="object-cover object-[50%_30%] scale-[1.35]"
               />
             </div>
 
@@ -196,11 +196,11 @@ export default function Home() {
               <h1 className="text-5xl sm:text-6xl font-bold text-white font-sans mb-2">
                 Dafa Raihan Ari Wibowo
               </h1>
-              <p className="text-purple-400 font-mono text-xl sm:text-2xl mb-4">
+              <p className="text-blue-500 font-mono text-xl sm:text-2xl mb-4">
                 fullstack developer & data analyst
               </p>
               <p className="text-zinc-400 text-sm flex items-center justify-center md:justify-start gap-2">
-                <FiMapPin className="text-purple-400" /> Jakarta, Indonesia
+                <FiMapPin className="text-blue-500" /> Jakarta, Indonesia
               </p>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function Home() {
             {/* Card 1: The Developer */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 flex flex-col items-start text-left min-h-72">
               <div className="flex items-center gap-3 mb-4">
-                <FaCode className="text-purple-400 text-3xl" />
+                <FaCode className="text-blue-500 text-3xl" />
                 <h3 className="text-white text-xl font-mono uppercase">
                   THE DEVELOPER
                 </h3>
@@ -235,7 +235,7 @@ export default function Home() {
               </p>
               <Link
                 href="#projects"
-                className="bg-purple-600 text-white font-bold py-2 px-4 rounded-md hover:bg-purple-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+                className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
               >
                 View Full Stack Work
               </Link>
@@ -244,7 +244,7 @@ export default function Home() {
             {/* Card 2: The Analyst */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 flex flex-col items-start text-left min-h-72">
               <div className="flex items-center gap-3 mb-4">
-                <FaDatabase className="text-purple-400 text-3xl" />
+                <FaDatabase className="text-blue-500 text-3xl" />
                 <h3 className="text-white text-xl font-mono uppercase">
                   THE ANALYST
                 </h3>
@@ -256,7 +256,7 @@ export default function Home() {
               </p>
               <Link
                 href="#projects"
-                className="bg-purple-600 text-white font-bold py-2 px-4 rounded-md hover:bg-purple-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+                className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
               >
                 View Data Analyst Work
               </Link>
@@ -267,7 +267,7 @@ export default function Home() {
           <div className="mt-16 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6">
             <Link
               href="#contact" // Link to the contact section, or a dedicated contact page
-              className="bg-white text-black font-bold py-3 px-8 rounded-md hover:bg-zinc-200 transition-colors flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+              className="bg-white text-black font-bold py-3 px-8 rounded-md hover:bg-zinc-200 transition-colors flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
               Hire Me <span className="ml-2 text-xl">&rarr;</span>
             </Link>
@@ -277,7 +277,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="hover:text-purple-400 transition-colors"
+                className="hover:text-blue-500 transition-colors"
               >
                 <FiGithub className="text-3xl" />
               </a>
@@ -286,14 +286,14 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="hover:text-purple-400 transition-colors"
+                className="hover:text-blue-500 transition-colors"
               >
                 <FiLinkedin className="text-3xl" />
               </a>
               <a
                 href="mailto:dafaraihanariwibowo@example.com" // TODO: Update with your email
                 aria-label="Email"
-                className="hover:text-purple-400 transition-colors"
+                className="hover:text-blue-500 transition-colors"
               >
                 <FiMail className="text-3xl" />
               </a>
