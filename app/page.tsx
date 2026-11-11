@@ -72,7 +72,7 @@ export default function Home() {
 
           {/* Right: Resume Button */}
           <a
-            href="/CV_Dafa_Raihan_Ari_Wibowo.pdf" // Place your resume in the `public` folder
+            href="/CV-Resume_Dafa Raihan Ari Wibowo.pdf" // Place your resume in the `public` folder
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 border border-zinc-700 bg-zinc-900 text-zinc-400 px-4 py-2 rounded-md text-sm hover:bg-zinc-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
@@ -161,7 +161,7 @@ export default function Home() {
                 contact
               </Link>
               <a
-                href="/CV_Dafa_Raihan_Ari_Wibowo.pdf"
+                href="/CV-Resume_Dafa Raihan Ari Wibowo.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-500"
