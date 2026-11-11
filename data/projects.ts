@@ -2,23 +2,40 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "Gundam Verse",
-    role: "FRONTEND DEVELOPER",
-    date: "DECEMBER 2025",
+    title: "Point of Sale (POS) Apps",
+    role: "Fullstack Developer",
+    date: "OCTOBER 2026",
     category: "fullstack",
+    image: "/images/pos-app.png",
     description: [
-      "Developed a highly responsive Single Page Application (SPA) showcasing Gundam data.",
-      "Integrated external RESTful APIs to fetch and display dynamic items efficiently.",
-      "Implemented real-time search, catalog sorting, and fluid filtering features for seamless navigation.",
+      "Developed a production-ready, real-time Point of Sale (POS) application for cafes and restaurants using Next.js 15, React 19, and TypeScript.",
+      "Implemented real-time data synchronization and backend operations using Supabase (PostgreSQL) for seamless order and inventory tracking.",
+      "Integrated Midtrans Payment Gateway to handle secure, automated digital transactions and checkout workflows.",
+      "Built dynamic user interfaces with Tailwind CSS and Shadcn UI, managing complex application states using Tanstack React Query and Zustand.",
     ],
     tags: ["react.js", "tailwindcss", "restfulapis", "vercel"],
-    githubUrl: "https://github.com/Lazydavidd/GundamVerse.git",
+    githubUrl: "https://github.com/Lazydavidd/Point-Of-Sales-Website.git",
+  },
+  {
+    title: "DQ Fashion Lab | Retail Sales & Revenue Performance Analytics",
+    role: "PORTOFOLIO | DATA ANALYST",
+    date: "AUGUST 2026",
+    category: "data & ai",
+    image: "/images/dq-fashion-lab.png",
+    description: [
+      "Analyzed over 236,000+ sold units and Rp 59.9B+ in total revenue across 5 fashion categories, evaluating transactional values and key revenue drivers.",
+      "Structured data aggregation models using advanced Excel logic (SUMPRODUCT) and DAX relational measures (SUMX + RELATED) for dynamic financial reporting.",
+      "Uncovered key performance metrics across monthly sales trends, holiday seasonality impacts (e.g., Idul Fitri spikes), and top-selling product categories (Gaun & Atasan).",
+    ],
+    tags: ["excel", "dax", "power-bi", "pivot-tables", "data-modeling"],
+    githubUrl: "https://github.com/yourusername/predictive-sales-ml",
   },
   {
     title: "Acara Tiket",
     role: "FULLSTACK DEVELOPER",
     date: "JULY 2025",
     category: "fullstack",
+    image: "/images/acara-tiket.png",
     description: [
       "Developed a complete event ticketing platform with CRUD operations for managing events, orders, and payment transactions.",
       "Integrated Midtrans Snap SDK to handle online payments securely, including Webhook transaction updates.",
@@ -35,10 +52,26 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Lazydavidd/front-end-acara.git",
   },
   {
+    title: "Gundam Verse",
+    role: "FRONTEND DEVELOPER",
+    date: "DECEMBER 2025",
+    category: "fullstack",
+    image: "/images/gundam-verse.png",
+    description: [
+      "Developed a highly responsive Single Page Application (SPA) showcasing Gundam data.",
+      "Integrated external RESTful APIs to fetch and display dynamic items efficiently.",
+      "Implemented real-time search, catalog sorting, and fluid filtering features for seamless navigation.",
+    ],
+    tags: ["react.js", "tailwindcss", "restfulapis", "vercel"],
+    githubUrl: "https://github.com/Lazydavidd/GundamVerse.git",
+  },
+
+  {
     title: "Website Wedding Jewepe",
     role: "FULLSTACK DEVELOPER",
     date: "JULY 2024",
     category: "fullstack",
+    image: "/images/wedding-jewepe.png",
     description: [
       "Developed Jewepe, a wedding website allowing users to browse packages, make reservations, and manage bookings.",
       "Built an integrated administrative dashboard to manage CRUD operations for reservations.",
@@ -52,6 +85,7 @@ export const projects: Project[] = [
     role: "FULLSTACK DEVELOPER",
     date: "AUGUST 2023",
     category: "fullstack",
+    image: "/images/lunar-kitchen.png",
     description: [
       "Created a responsive, interactive online menu for food ordering.",
       "Stored orders and customer queries securely inside a MySQL relational database.",
@@ -59,18 +93,5 @@ export const projects: Project[] = [
     ],
     tags: ["javascript", "php", "mysql", "bootstrap", "whatsappapi"],
     githubUrl: "https://github.com/Lazydavidd/Fullstack-F-B-Order-online.git",
-  },
-  {
-    title: "DQ Fashion Lab | Retail Sales & Revenue Performance Analytics",
-    role: "PORTOFOLIO | DATA ANALYST",
-    date: "AUGUST 2026",
-    category: "data & ai",
-    description: [
-      "Analyzed over 236,000+ sold units and Rp 59.9B+ in total revenue across 5 fashion categories, evaluating transactional values and key revenue drivers.",
-      "Structured data aggregation models using advanced Excel logic (SUMPRODUCT) and DAX relational measures (SUMX + RELATED) for dynamic financial reporting.",
-      "Uncovered key performance metrics across monthly sales trends, holiday seasonality impacts (e.g., Idul Fitri spikes), and top-selling product categories (Gaun & Atasan).",
-    ],
-    tags: ["excel", "dax", "power-bi", "pivot-tables", "data-modeling"],
-    githubUrl: "https://github.com/yourusername/predictive-sales-ml",
   },
 ];
